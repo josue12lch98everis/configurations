@@ -1,0 +1,22 @@
+server:
+  port: 8093
+
+config:
+  base:
+    endpoint:
+      customer: http://creditcard-service:8091/api/creditcard
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongo-server:27017/ProyectoS1Bank
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: paymentCredit-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
