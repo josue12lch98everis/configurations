@@ -4,11 +4,11 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27018/ProyectoS1Bank
+      uri: mongodb+srv://dbUser:j6FPw3opZsiHuiWT@db-everis-bank.pmiyr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
   application:
     name: debit-service
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server-bc.azurewebsites.net/eureka/
